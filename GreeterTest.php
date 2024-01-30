@@ -23,4 +23,13 @@ final class GreeterTest extends TestCase
 
         $this->assertSame('Hello, Bruno!', $greeting);
     }
+
+    public function testGreeterHtmlUrl(): void
+    {
+        $content = file_get_contents('http://localhost/php/Greeter.html');
+        $expected = ['hello' => 'world'];
+
+        $this->assertJson($content);
+        $this->assertEquals($expected, json_decode($content, true));
+    }
 }
