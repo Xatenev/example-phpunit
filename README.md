@@ -1,5 +1,11 @@
-wget -O phpunit.phar https://phar.phpunit.de/phpunit-10.phar
+# PHPUnit
 
-chmod +x phpunit.phar
+Demonstration of a bare-bones PHPUnit test using phpunit.phar for educational purposes in #php (libera IRC).
 
-./phpunit.phar GreeterTest.php
+# Run
+
+    wget -O phpunit.phar https://phar.phpunit.de/phpunit-10.phar
+
+    chmod +x phpunit.phar
+
+    ./phpunit.phar GreeterTest.php
